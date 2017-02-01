@@ -1,2 +1,2 @@
-my_ros_package
--DCATKIN_DEVEL_PREFIX=/home/david/ros_workspace/devel -DCMAKE_INSTALL_PREFIX=/home/david/ros_workspace/install -G Unix Makefiles
+CDH_core
+-DCATKIN_DEVEL_PREFIX=/home/david/spacehauc/cdh_main/devel -DCMAKE_INSTALL_PREFIX=/home/david/spacehauc/cdh_main/install -G Unix Makefiles

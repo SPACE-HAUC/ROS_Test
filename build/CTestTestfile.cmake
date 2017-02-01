@@ -1,8 +1,8 @@
 # CMake generated Testfile for 
-# Source directory: /home/david/ros_workspace/src
-# Build directory: /home/david/ros_workspace/build
+# Source directory: /home/david/spacehauc/cdh_main/src
+# Build directory: /home/david/spacehauc/cdh_main/build
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
-SUBDIRS(gtest)
-SUBDIRS(my_ros_package)
+subdirs(gtest)
+subdirs(CDH_core)

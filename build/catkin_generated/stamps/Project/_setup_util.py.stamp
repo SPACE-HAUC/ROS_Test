@@ -52,7 +52,6 @@ IS_WINDOWS = (system == 'Windows')
 # subfolder of workspace prepended to CMAKE_PREFIX_PATH
 ENV_VAR_SUBFOLDERS = {
     'CMAKE_PREFIX_PATH': '',
-    'CPATH': 'include',
     'LD_LIBRARY_PATH' if not IS_DARWIN else 'DYLD_LIBRARY_PATH': ['lib', os.path.join('lib', 'x86_64-linux-gnu')],
     'PATH': 'bin',
     'PKG_CONFIG_PATH': [os.path.join('lib', 'pkgconfig'), os.path.join('lib', 'x86_64-linux-gnu', 'pkgconfig')],
@@ -214,6 +213,7 @@ def find_env_hooks(environ, cmake_prefix_path):
     specific_env_hook_ext = environ['CATKIN_SHELL'] if not IS_WINDOWS and 'CATKIN_SHELL' in environ and environ['CATKIN_SHELL'] else None
     # remove non-workspace paths
     workspaces = [path for path in cmake_prefix_path.split(os.pathsep) if path and os.path.isfile(os.path.join(path, CATKIN_MARKER_FILE))]
+    workspaces.append('/')
     for workspace in reversed(workspaces):
         env_hook_dir = os.path.join(workspace, 'etc', 'catkin', 'profile.d')
         if os.path.isdir(env_hook_dir):
@@ -244,7 +244,7 @@ def find_env_hooks(environ, cmake_prefix_path):
     lines.append(assignment('_CATKIN_ENVIRONMENT_HOOKS_COUNT', count))
     for i in range(count):
         lines.append(assignment('_CATKIN_ENVIRONMENT_HOOKS_%d' % i, env_hooks[i]))
-        lines.append(assignment('_CATKIN_ENVIRONMENT_HOOKS_%d_WORKSPACE' % i, env_hooks_workspace[i]))
+        lines.append(assignment('_CATKIN_ENVIRONMENT_HOOKS_%d_WORKSPACE' % i, (env_hooks_workspace[i] if env_hooks_workspace[i] != '/' else '')))
     return lines
 
 
@@ -263,7 +263,7 @@ if __name__ == '__main__':
             sys.exit(1)
 
         # environment at generation time
-        CMAKE_PREFIX_PATH = '/home/david/ros_workspace/devel;/opt/ros/indigo'.split(';')
+        CMAKE_PREFIX_PATH = ''.split(';')
         # prepend current workspace if not already part of CPP
         base_path = os.path.dirname(__file__)
         if base_path not in CMAKE_PREFIX_PATH:
