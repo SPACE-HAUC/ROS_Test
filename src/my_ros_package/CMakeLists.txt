@@ -189,10 +189,83 @@ include_directories(
 
 include_directories(include ${catkin_INCLUDE_DIRS})
 
-add_executable(my_publisher src/my_publisher.cpp)
-target_link_libraries(my_publisher ${catkin_LIBRARIES})
-add_dependencies(my_publisher my_ros_package_generate_messages_cpp)
+add_executable(my_publisher1 src/my_publisher1.cpp)
+target_link_libraries(my_publisher1 ${catkin_LIBRARIES})
+add_dependencies(my_publisher1 my_ros_package_generate_messages_cpp)
 
-add_executable(my_subscriber src/my_subscriber.cpp)
-target_link_libraries(my_subscriber ${catkin_LIBRARIES})
-add_dependencies(my_subscriber my_ros_package_generate_messages_cpp)
+add_executable(my_publisher2 src/my_publisher2.cpp)
+target_link_libraries(my_publisher2 ${catkin_LIBRARIES})
+add_dependencies(my_publisher2 my_ros_package_generate_messages_cpp)
+
+add_executable(my_publisher3 src/my_publisher3.cpp)
+target_link_libraries(my_publisher3 ${catkin_LIBRARIES})
+add_dependencies(my_publisher3 my_ros_package_generate_messages_cpp)
+
+add_executable(my_publisher4 src/my_publisher4.cpp)
+target_link_libraries(my_publisher4 ${catkin_LIBRARIES})
+add_dependencies(my_publisher4 my_ros_package_generate_messages_cpp)
+
+add_executable(my_publisher5 src/my_publisher5.cpp)
+target_link_libraries(my_publisher5 ${catkin_LIBRARIES})
+add_dependencies(my_publisher5 my_ros_package_generate_messages_cpp)
+
+add_executable(my_publisher6 src/my_publisher6.cpp)
+target_link_libraries(my_publisher6 ${catkin_LIBRARIES})
+add_dependencies(my_publisher6 my_ros_package_generate_messages_cpp)
+
+add_executable(my_publisher7 src/my_publisher7.cpp)
+target_link_libraries(my_publisher7 ${catkin_LIBRARIES})
+add_dependencies(my_publisher7 my_ros_package_generate_messages_cpp)
+
+add_executable(my_publisher8 src/my_publisher8.cpp)
+target_link_libraries(my_publisher8 ${catkin_LIBRARIES})
+add_dependencies(my_publisher8 my_ros_package_generate_messages_cpp)
+
+add_executable(my_publisher9 src/my_publisher9.cpp)
+target_link_libraries(my_publisher9 ${catkin_LIBRARIES})
+add_dependencies(my_publisher9 my_ros_package_generate_messages_cpp)
+
+add_executable(my_publisher10 src/my_publisher10.cpp)
+target_link_libraries(my_publisher10 ${catkin_LIBRARIES})
+add_dependencies(my_publisher10 my_ros_package_generate_messages_cpp)
+
+
+add_executable(my_subscriber1 src/my_subscriber1.cpp)
+target_link_libraries(my_subscriber1 ${catkin_LIBRARIES})
+add_dependencies(my_subscriber1 my_ros_package_generate_messages_cpp)
+
+add_executable(my_subscriber2 src/my_subscriber2.cpp)
+target_link_libraries(my_subscriber2 ${catkin_LIBRARIES})
+add_dependencies(my_subscriber2 my_ros_package_generate_messages_cpp)
+
+add_executable(my_subscriber3 src/my_subscriber3.cpp)
+target_link_libraries(my_subscriber3 ${catkin_LIBRARIES})
+add_dependencies(my_subscriber3 my_ros_package_generate_messages_cpp)
+
+add_executable(my_subscriber4 src/my_subscriber4.cpp)
+target_link_libraries(my_subscriber4 ${catkin_LIBRARIES})
+add_dependencies(my_subscriber4 my_ros_package_generate_messages_cpp)
+
+add_executable(my_subscriber5 src/my_subscriber5.cpp)
+target_link_libraries(my_subscriber5 ${catkin_LIBRARIES})
+add_dependencies(my_subscriber5 my_ros_package_generate_messages_cpp)
+
+add_executable(my_subscriber6 src/my_subscriber6.cpp)
+target_link_libraries(my_subscriber6 ${catkin_LIBRARIES})
+add_dependencies(my_subscriber6 my_ros_package_generate_messages_cpp)
+
+add_executable(my_subscriber7 src/my_subscriber7.cpp)
+target_link_libraries(my_subscriber7 ${catkin_LIBRARIES})
+add_dependencies(my_subscriber7 my_ros_package_generate_messages_cpp)
+
+add_executable(my_subscriber8 src/my_subscriber8.cpp)
+target_link_libraries(my_subscriber8 ${catkin_LIBRARIES})
+add_dependencies(my_subscriber8 my_ros_package_generate_messages_cpp)
+
+add_executable(my_subscriber9 src/my_subscriber9.cpp)
+target_link_libraries(my_subscriber9 ${catkin_LIBRARIES})
+add_dependencies(my_subscriber9 my_ros_package_generate_messages_cpp)
+
+add_executable(my_subscriber10 src/my_subscriber10.cpp)
+target_link_libraries(my_subscriber10 ${catkin_LIBRARIES})
+add_dependencies(my_subscriber10 my_ros_package_generate_messages_cpp)

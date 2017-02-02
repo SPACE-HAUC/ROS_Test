@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/david/ros_workspace/src
+CMAKE_SOURCE_DIR = /home/spacehauc/code/ros/stress_test/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/david/ros_workspace/build
+CMAKE_BINARY_DIR = /home/spacehauc/code/ros/stress_test/build
 
 # Utility rule file for roscpp_generate_messages_py.
 
@@ -56,10 +56,10 @@ my_ros_package/CMakeFiles/roscpp_generate_messages_py.dir/build: roscpp_generate
 .PHONY : my_ros_package/CMakeFiles/roscpp_generate_messages_py.dir/build
 
 my_ros_package/CMakeFiles/roscpp_generate_messages_py.dir/clean:
-	cd /home/david/ros_workspace/build/my_ros_package && $(CMAKE_COMMAND) -P CMakeFiles/roscpp_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/spacehauc/code/ros/stress_test/build/my_ros_package && $(CMAKE_COMMAND) -P CMakeFiles/roscpp_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : my_ros_package/CMakeFiles/roscpp_generate_messages_py.dir/clean
 
 my_ros_package/CMakeFiles/roscpp_generate_messages_py.dir/depend:
-	cd /home/david/ros_workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/david/ros_workspace/src /home/david/ros_workspace/src/my_ros_package /home/david/ros_workspace/build /home/david/ros_workspace/build/my_ros_package /home/david/ros_workspace/build/my_ros_package/CMakeFiles/roscpp_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/spacehauc/code/ros/stress_test/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/spacehauc/code/ros/stress_test/src /home/spacehauc/code/ros/stress_test/src/my_ros_package /home/spacehauc/code/ros/stress_test/build /home/spacehauc/code/ros/stress_test/build/my_ros_package /home/spacehauc/code/ros/stress_test/build/my_ros_package/CMakeFiles/roscpp_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : my_ros_package/CMakeFiles/roscpp_generate_messages_py.dir/depend
 

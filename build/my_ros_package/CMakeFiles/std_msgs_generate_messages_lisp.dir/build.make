@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/david/ros_workspace/src
+CMAKE_SOURCE_DIR = /home/spacehauc/code/ros/stress_test/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/david/ros_workspace/build
+CMAKE_BINARY_DIR = /home/spacehauc/code/ros/stress_test/build
 
 # Utility rule file for std_msgs_generate_messages_lisp.
 
@@ -56,10 +56,10 @@ my_ros_package/CMakeFiles/std_msgs_generate_messages_lisp.dir/build: std_msgs_ge
 .PHONY : my_ros_package/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
 
 my_ros_package/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean:
-	cd /home/david/ros_workspace/build/my_ros_package && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_lisp.dir/cmake_clean.cmake
+	cd /home/spacehauc/code/ros/stress_test/build/my_ros_package && $(CMAKE_COMMAND) -P CMakeFiles/std_msgs_generate_messages_lisp.dir/cmake_clean.cmake
 .PHONY : my_ros_package/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
 
 my_ros_package/CMakeFiles/std_msgs_generate_messages_lisp.dir/depend:
-	cd /home/david/ros_workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/david/ros_workspace/src /home/david/ros_workspace/src/my_ros_package /home/david/ros_workspace/build /home/david/ros_workspace/build/my_ros_package /home/david/ros_workspace/build/my_ros_package/CMakeFiles/std_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/spacehauc/code/ros/stress_test/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/spacehauc/code/ros/stress_test/src /home/spacehauc/code/ros/stress_test/src/my_ros_package /home/spacehauc/code/ros/stress_test/build /home/spacehauc/code/ros/stress_test/build/my_ros_package /home/spacehauc/code/ros/stress_test/build/my_ros_package/CMakeFiles/std_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : my_ros_package/CMakeFiles/std_msgs_generate_messages_lisp.dir/depend
 

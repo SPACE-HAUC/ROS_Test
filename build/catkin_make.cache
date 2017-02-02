@@ -1,2 +1,2 @@
 my_ros_package
--DCATKIN_DEVEL_PREFIX=/home/david/ros_workspace/devel -DCMAKE_INSTALL_PREFIX=/home/david/ros_workspace/install -G Unix Makefiles
+-DCATKIN_DEVEL_PREFIX=/home/spacehauc/code/ros/stress_test/devel -DCMAKE_INSTALL_PREFIX=/home/spacehauc/code/ros/stress_test/install -G Unix Makefiles

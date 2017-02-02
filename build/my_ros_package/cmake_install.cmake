@@ -1,8 +1,8 @@
-# Install script for directory: /home/david/ros_workspace/src/my_ros_package
+# Install script for directory: /home/spacehauc/code/ros/stress_test/src/my_ros_package
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/home/david/ros_workspace/install")
+  SET(CMAKE_INSTALL_PREFIX "/home/spacehauc/code/ros/stress_test/install")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -33,17 +33,17 @@ IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/david/ros_workspace/build/my_ros_package/catkin_generated/installspace/my_ros_package.pc")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/spacehauc/code/ros/stress_test/build/my_ros_package/catkin_generated/installspace/my_ros_package.pc")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_ros_package/cmake" TYPE FILE FILES
-    "/home/david/ros_workspace/build/my_ros_package/catkin_generated/installspace/my_ros_packageConfig.cmake"
-    "/home/david/ros_workspace/build/my_ros_package/catkin_generated/installspace/my_ros_packageConfig-version.cmake"
+    "/home/spacehauc/code/ros/stress_test/build/my_ros_package/catkin_generated/installspace/my_ros_packageConfig.cmake"
+    "/home/spacehauc/code/ros/stress_test/build/my_ros_package/catkin_generated/installspace/my_ros_packageConfig-version.cmake"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_ros_package" TYPE FILE FILES "/home/david/ros_workspace/src/my_ros_package/package.xml")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_ros_package" TYPE FILE FILES "/home/spacehauc/code/ros/stress_test/src/my_ros_package/package.xml")
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 

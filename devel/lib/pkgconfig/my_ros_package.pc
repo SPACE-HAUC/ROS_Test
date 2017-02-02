@@ -1,8 +1,8 @@
-prefix=/home/david/ros_workspace/devel
+prefix=/home/spacehauc/code/ros/stress_test/devel
 
 Name: my_ros_package
 Description: Description of my_ros_package
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/david/ros_workspace/devel/lib 
+Libs: -L/home/spacehauc/code/ros/stress_test/devel/lib 
 Requires: 

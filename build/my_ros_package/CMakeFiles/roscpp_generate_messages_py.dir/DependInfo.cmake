@@ -17,7 +17,7 @@ SET(CMAKE_TARGET_LINKED_INFO_FILES
 # The include file search paths:
 SET(CMAKE_C_TARGET_INCLUDE_PATH
   "/opt/ros/indigo/include"
-  "/home/david/ros_workspace/src/my_ros_package/include"
+  "/home/spacehauc/code/ros/stress_test/src/my_ros_package/include"
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
 SET(CMAKE_Fortran_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})
